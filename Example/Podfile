@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'HDHelper123_Example' do
+  pod 'HDHelper123', :path => '../'
+
+  target 'HDHelper123_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
