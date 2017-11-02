@@ -7,6 +7,7 @@
 //
 
 @import UIKit;
+#import <HDHelper123/StringeeClient.h>
 
 @interface SEViewController : UIViewController
 

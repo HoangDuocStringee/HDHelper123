@@ -1,0 +1,6 @@
+framework module HDHelper123 {
+  umbrella header "HDHelper123-umbrella.h"
+
+  export *
+  module * { export * }
+}

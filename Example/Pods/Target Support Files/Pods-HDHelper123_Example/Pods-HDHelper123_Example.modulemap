@@ -1,0 +1,6 @@
+framework module Pods_HDHelper123_Example {
+  umbrella header "Pods-HDHelper123_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

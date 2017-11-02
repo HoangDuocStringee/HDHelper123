@@ -1,0 +1,1 @@
+../../../../../HDHelper123/Classes/StringeeClient.h

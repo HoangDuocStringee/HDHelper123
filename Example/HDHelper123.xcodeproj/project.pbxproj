@@ -38,7 +38,7 @@
 
 /* Begin PBXFileReference section */
 		3B88A3145CD74AC9338A9775 /* Pods-HDHelper123_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HDHelper123_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HDHelper123_Tests/Pods-HDHelper123_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		48C4742CF37519302A77F3DB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		48C4742CF37519302A77F3DB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* HDHelper123_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HDHelper123_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -63,9 +63,9 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		722A092303AA42735BDD0587 /* Pods-HDHelper123_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HDHelper123_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-HDHelper123_Example/Pods-HDHelper123_Example.release.xcconfig"; sourceTree = "<group>"; };
 		79740F49BD34A9908CBF5C9C /* Pods-HDHelper123_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HDHelper123_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HDHelper123_Tests/Pods-HDHelper123_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		7A9A10CB992C5EFE06470556 /* HDHelper123.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = HDHelper123.podspec; path = ../HDHelper123.podspec; sourceTree = "<group>"; };
+		7A9A10CB992C5EFE06470556 /* HDHelper123.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = HDHelper123.podspec; path = ../HDHelper123.podspec; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		DE51674262683B8E0A3DE4D6 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		DE51674262683B8E0A3DE4D6 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		F64C3B0A09CC6A17960CB5DF /* Pods_HDHelper123_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HDHelper123_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -250,6 +250,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "duochv@stringee.com";
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = 8MA9F9A86E;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -533,12 +536,15 @@
 			baseConfigurationReference = 6467BD826F8FF18ED87304A1 /* Pods-HDHelper123_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8MA9F9A86E;
+				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HDHelper123/HDHelper123-Prefix.pch";
 				INFOPLIST_FILE = "HDHelper123/HDHelper123-Info.plist";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -548,12 +554,15 @@
 			baseConfigurationReference = 722A092303AA42735BDD0587 /* Pods-HDHelper123_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8MA9F9A86E;
+				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HDHelper123/HDHelper123-Prefix.pch";
 				INFOPLIST_FILE = "HDHelper123/HDHelper123-Info.plist";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
